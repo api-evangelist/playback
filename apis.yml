@@ -1,7 +1,24 @@
 aid: playback
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/playback.png
 name: Playback
-description: Playback is a company surfaced as a portfolio company of khosla-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Playback (playback.tv) is a mobile-first live streaming platform backed by Khosla Ventures,
+  where creators broadcast live streams, audiences watch and interact in real time, and streamers earn
+  through the platform's monetization program. The consumer product is organized around streaming,
+  watching, earning, and community guidelines. As of this enrichment pass Playback publishes a consumer
+  web/app experience and a Notaku-powered help center but exposes no public developer API, OpenAPI
+  specification, SDK, or documented developer surface; this profile therefore carries identity and
+  domain-security signal only.
 url: https://raw.githubusercontent.com/api-evangelist/playback/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Live Streaming
+- Streaming
+- Video
+- Creator Economy
+- Entertainment
+- Consumer
+- Media
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/playback-domain-security.yml
 - type: Website
   url: https://www.playback.tv/
+- type: Support
+  url: https://help.playback.tv/
+- type: GitHubOrganization
+  url: https://github.com/playbacktv
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
